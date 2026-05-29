@@ -51,3 +51,4 @@ AUTH_SECRET="ضع-سلسلة-عشوائية-طويلة-هنا"
 - `prisma/` — مخطط قاعدة البيانات والبذر
 - `src/lib/` — Prisma، المصادقة، مسار قاعدة البيانات
 "# fruietex" 
+#Fruietex Store Live
