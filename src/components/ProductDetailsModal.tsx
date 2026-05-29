@@ -199,17 +199,10 @@ export default function ProductDetailsModal({
   return (
     <div className="modal-overlay">
       <div
+        className="modal-content-container"
         style={{
-          background: "var(--bg-card)",
-          padding: "2rem",
-          borderRadius: "var(--radius-lg)",
           maxWidth: "750px",
           width: "100%",
-          maxHeight: "90vh",
-          overflowY: "auto",
-          position: "relative",
-          boxShadow: "0 25px 50px rgba(0,0,0,0.25)",
-          animation: "fadeIn 0.3s ease",
         }}
       >
         {/* Close Button */}
@@ -240,7 +233,7 @@ export default function ProductDetailsModal({
         </button>
 
         {/* Two-column layout */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: "2rem", marginTop: "1rem" }}>
+        <div className="modal-grid-two-col" style={{ marginTop: "1rem" }}>
           
           {/* Column 1: Image & Basic Info */}
           <div>

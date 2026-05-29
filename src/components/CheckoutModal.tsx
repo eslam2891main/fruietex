@@ -240,17 +240,10 @@ export default function CheckoutModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="modal-overlay">
       <div
+        className="modal-content-container"
         style={{
-          background: "var(--bg-card)",
-          padding: "2rem",
-          borderRadius: "var(--radius-lg)",
           maxWidth: "640px",
           width: "100%",
-          maxHeight: "92vh",
-          overflowY: "auto",
-          position: "relative",
-          boxShadow: "0 25px 50px rgba(0,0,0,0.25)",
-          animation: "fadeIn 0.3s ease",
         }}
       >
         {/* Close button */}
@@ -504,7 +497,7 @@ export default function CheckoutModal({ onClose }: { onClose: () => void }) {
               </div>
 
               {/* Shipping Dropdowns */}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+              <div className="checkout-grid-two-col" style={{ marginTop: "0.25rem" }}>
                 <div>
                   <label style={{ display: "block", marginBottom: "0.5rem", fontWeight: "600", fontSize: "0.95rem" }}>
                     المحافظة
@@ -570,10 +563,9 @@ export default function CheckoutModal({ onClose }: { onClose: () => void }) {
                   طريقة الدفع
                 </label>
                 <div
+                  className="checkout-grid-two-col"
                   style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gap: "0.75rem",
+                    marginTop: "0.25rem"
                   }}
                 >
                   {PAYMENT_OPTIONS.map((option) => (

@@ -223,7 +223,7 @@ export default function Home() {
               const calculatedFiber = ((nutrition.fiber * calcWeight) / 100).toFixed(1);
 
               return (
-                <div className="glass-panel" style={{ padding: "2rem", borderRadius: "var(--radius-lg)", display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: "2.5rem", alignItems: "center" }}>
+                <div className="glass-panel nutrition-calculator-panel">
                   
                   {/* Inputs Column */}
                   <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
@@ -275,7 +275,7 @@ export default function Home() {
 
                   {/* Outputs Column */}
                   <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-                    <div style={{ display: "flex", gap: "1rem", justifyContent: "space-between" }}>
+                    <div className="nutrition-badges-row">
                       
                       {/* Calories badge */}
                       <div className="glass-panel" style={{ flex: 1, padding: "1rem", textAlign: "center", borderRadius: "var(--radius-md)", borderRight: "4px solid #ef4444" }}>
