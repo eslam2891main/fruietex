@@ -1,11 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
-import { resolveDatabaseUrl } from "../src/lib/database-url";
-
-const adapter = new PrismaBetterSqlite3({
-  url: resolveDatabaseUrl(),
-});
-const prisma = new PrismaClient({ adapter });
+import { prisma } from "../src/lib/prisma";
 
 async function main() {
   console.log("🌱 بدء شحن أكواد كوبونات الخصم...");

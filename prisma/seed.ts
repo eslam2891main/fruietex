@@ -1,12 +1,5 @@
-import { PrismaClient } from "@prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+import { prisma } from "../src/lib/prisma";
 import bcrypt from "bcryptjs";
-import { resolveDatabaseUrl } from "../src/lib/database-url";
-
-const adapter = new PrismaBetterSqlite3({
-  url: resolveDatabaseUrl(),
-});
-const prisma = new PrismaClient({ adapter });
 
 async function main() {
   console.log("🌱 بدء إعداد قاعدة البيانات الشاملة...");
